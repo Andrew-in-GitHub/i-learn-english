@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+<body>
+  <%- include('./partials/nav.ejs') %>
+  <p>add-word.ejs</p>
+  <form id="word-form" method="post" action="/add-word">
+    <div class="form-info">
+      <label>English Word
+        <input type="text" name="words_en">
+      </label>
+
+      <label style="text-align: center;">Activ
+        <input type="checkbox" name="activ" checked>
+      </label>
+
+      <!-- <div>
+        <input type="radio" id="huey" name="activ" value="huey" />
+        <label for="huey">Activ-On</label>
+      </div>    
+      <div>
+        <input type="radio" id="dewey" name="activ" value="dewey" />
+        <label for="dewey">Activ-Off</label>
+      </div> -->
+
+    </div>
+    <div class="form-text">
+      <label>Translation
+        <textarea name="words_ua"></textarea>
+      </label>
+    </div>
+    <div class="form-button">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
